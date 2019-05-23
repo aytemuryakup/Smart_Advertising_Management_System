@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Baslangic">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/girislogo" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign IN"
+        android:id="@+id/btn_giris"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btn_kayit"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

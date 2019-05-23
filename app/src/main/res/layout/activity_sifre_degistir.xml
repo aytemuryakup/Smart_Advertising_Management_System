@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="10dp"
+tools:context=".SifreDegistirActivity">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/edittext_background"
+    android:gravity="center"
+    android:inputType="textEmailAddress"
+    android:id="@+id/sifirla_email"
+    android:hint="Mail Adresiniz..." />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Parolanızı Sıfırlayın"
+    android:id="@+id/sifre_degistir"
+    android:textColor="@color/colorPrimary"
+    android:background="@drawable/btn_background"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="45dp"
+    android:layout_marginRight="45dp"/>
+</LinearLayout>
