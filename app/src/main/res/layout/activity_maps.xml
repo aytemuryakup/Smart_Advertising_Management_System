@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Lokasyon Giriniz" />
+
+        <EditText
+            android:id="@+id/mesafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_search"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Mesafe Giriniz"
+            android:text= "100" />
+
+        <ImageButton
+            android:id="@+id/searchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick"
+            android:src="@drawable/searchicon" />
+
+        <EditText
+            android:id="@+id/txtturfilter"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="54dp"
+            android:hint="Firma Tipi Giriniz."
+            android:ems="10" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/filtrelemeye_git"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout"
+        android:text="Filtrele"
+        android:textColor="@color/colormavi" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/filtrelemeye_git"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvKampanya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+

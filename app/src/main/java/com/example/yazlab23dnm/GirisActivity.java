@@ -85,7 +85,7 @@ public class GirisActivity extends AppCompatActivity {
                                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                 pdGiris.dismiss();
 
-                                                Intent intent = new Intent(GirisActivity.this,AnasayfaActivity.class);
+                                                Intent intent = new Intent(GirisActivity.this, MapsActivity.class);
                                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                                 startActivity(intent);
                                                 finish();

@@ -97,7 +97,7 @@ public class KayitActivity extends AppCompatActivity {
 
                                     pd.dismiss();
 
-                                    Intent intent = new Intent(KayitActivity.this,AnasayfaActivity.class);
+                                    Intent intent = new Intent(KayitActivity.this, MapsActivity.class);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(intent);
                                 }

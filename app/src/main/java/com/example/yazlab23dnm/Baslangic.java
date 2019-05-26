@@ -22,9 +22,9 @@ public class Baslangic extends AppCompatActivity {
         baslangickullanici = FirebaseAuth.getInstance().getCurrentUser();
 
         //Eğer Kullanıcı Veri tabanında varsa direk anasayfaya gönder.
-        if(baslangickullanici !=  null)
+       if(baslangickullanici !=  null)
         {
-            startActivity(new Intent(Baslangic.this,AnasayfaActivity.class ));
+            startActivity(new Intent(Baslangic.this, MapsActivity.class ));
             finish();
         }
     }
